@@ -9,8 +9,7 @@
       v-ripple
       v-show="!betaPasswordDialog"
       @click="eggClickCount++"
-
-    >
+      >
       <v-btn @click="goHome(false)" icon>
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
