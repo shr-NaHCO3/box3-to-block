@@ -1,0 +1,33 @@
+{
+  "name": "box3-visual-programing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@blockly/block-plus-minus": "^2.0.37",
+    "@blockly/disable-top-blocks": "^0.1.18",
+    "@blockly/field-slider": "^2.1.27",
+    "@nuxtjs/axios": "^5.13.6",
+    "axios": "^0.21.4",
+    "blockly": "^6.20210701.0",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7",
+    "vuetify": "^2.5.5"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.7",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/vuetify": "^1.12.1"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": 3000
+    }
+  }
+}

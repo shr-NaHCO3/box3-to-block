@@ -1,0 +1,115 @@
+// Blockly魔改&特效 样式
+.custom_renderer-renderer.box3-theme .blocklySelected > .blocklyPath
+  stroke: #eee
+  transition-duration: .2s
+
+.custom_renderer-renderer.box3-theme .blocklyHighlightedConnectionPath
+  stroke: #eee
+  transition-duration: .2s
+  width: 50px
+
+.blocklyDisabled > .blocklyPath
+  fill: #888
+
+.blocklyToolboxDiv
+  background-color: #F5F9FF80
+  backdrop-filter: blur(1px)
+
+.blocklyFlyout
+  backdrop-filter: blur(1px)
+
+.blocklyFlyoutBackground
+  fill: #F5F9FF80
+
+//.code-view
+//  width: 450px
+//  right: -440px
+//  border-left: #1e9eff solid 10px
+//  z-index: 999
+//  backdrop-filter: blur(1px)
+//  transition-duration: .5s
+//  transition-timing-function: ease-out
+
+.code-view *
+  opacity: .95
+
+.code-view:hover
+  right: 0
+  border-left: #888 solid 1px
+  box-shadow: -5px 0 15px #88888820
+
+.blocklyTreeRow
+  margin-top: 0
+  margin-bottom: 0
+  text-align: center
+  min-width: 56px
+  height: 40px
+  padding: 8px 8px 8px 0
+
+  transition-duration: 200ms
+
+.blocklyTreeSelected
+  text-shadow: 0 0 5px
+
+.blocklyWidgetDiv .blocklyMenu
+  background-color: #F5F9FF80
+  backdrop-filter: blur(2px)
+  border: 1px solid #fff
+  border-radius: 0
+  min-height: 190px
+  transition-duration: 200ms
+  box-shadow: 0 0 5px #fff
+
+.blocklyWidgetDiv .blocklyMenu.blocklyFocused
+  box-shadow: 0 0 15px #fff
+
+.blocklyMenuItem
+  color: #333
+  transition-duration: 200ms
+
+.blocklyMenuItemHighlight
+  background: #fff
+  color: #47afff
+
+.blocklyMenuItemDisabled
+  color: #aaa
+
+
+.blocklyFlyoutButtonShadow
+  fill: none
+
+.blocklyFlyoutButton
+  fill: #1e9eff
+
+.blocklyFlyoutButton:hover
+  fill: #47afff
+
+.blocklyPath
+  transition-duration: 200ms
+
+.blocklySvg circle
+  stroke: #fff
+  stroke-width: 5px
+
+.blocklyTooltipDiv, .blocklyDropDownDiv
+  background: #F5F9FF80 !important
+  backdrop-filter: blur(10px) !important
+
+.custom_renderer-renderer.box3-theme .blocklyInsertionMarker > .blocklyPath
+  fill: #aaa
+
+.blocklyDragging > .blocklyPath, .blocklyDragging > .blocklyPathLight
+  backdrop-filter: blur(1px)
+
+.blocklyToolboxCategory, .blocklyZoom, .blocklyTrash image
+  cursor: pointer
+
+.blocklyMainBackground
+  cursor: move
+
+.blocklyScrollbarHandle
+  opacity: 0
+
+.blocklyCommentTextarea, .blocklyResizeSE, .blocklyResizeLine
+  background-color: #00000000
+  stroke: #ffffff00
