@@ -12,13 +12,13 @@ try {
       colour_blocks: {
         colourPrimary: "20"
       },
+      logic_blocks: {
+        colourPrimary: "#4FC3F7",
+        colourTertiary: "#81D4FA"
+      },
       list_blocks: {
         colourPrimary: "#F9CC37",
         colourTertiary: "#C4A12B"
-      },
-      logic_blocks: {
-        colourPrimary: "#68CDFF",
-        colourTertiary: "#53A2C9"
       },
       db_blocks:{
         colourPrimary: "	#FF1493",
