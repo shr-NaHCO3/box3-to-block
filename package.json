@@ -22,7 +22,8 @@
   "devDependencies": {
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/vuetify": "^1.12.1"
+    "@nuxtjs/vuetify": "^1.12.1",
+    "electron": "^18.2.4"
   },
   "config": {
     "nuxt": {
