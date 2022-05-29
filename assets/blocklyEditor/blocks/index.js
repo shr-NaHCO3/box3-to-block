@@ -9,161 +9,161 @@ const categories = [
 async function initBlocks() {
   let finalXml = "<xml>"
   finalXml += `
-<category name="逻辑" colour="#68CDFF">
-    <block type="controls_if"></block>
-    <block type="controls_if">
-      <mutation else="1"></mutation>
-    </block>
-    <block type="logic_compare">
-      <field name="OP">EQ</field>
-    </block>
-    <block type="logic_operation">
-      <field name="OP">AND</field>
-    </block>
-    <block type="logic_negate"></block>
-    <block type="logic_boolean">
-      <field name="BOOL">TRUE</field>
-    </block>
-    <block type="logic_null"></block>
-    <block type="logic_ternary"></block>
-    <block type="random_execute"></block>
-    <block type="try_catch"></block>
-    <block type="controls_repeat_ext">
-      <value name="TIMES">
-        <shadow type="math_number">
-          <field name="NUM">10</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="controls_whileUntil">
-      <field name="MODE">WHILE</field>
-    </block>
-    <block type="controls_for">
-      <field name="VAR" id="7V7Ri%H@,eTPMHbA%8R.">i</field>
-      <value name="FROM">
-        <shadow type="math_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
-      <value name="TO">
-        <shadow type="math_number">
-          <field name="NUM">10</field>
-        </shadow>
-      </value>
-      <value name="BY">
-        <shadow type="math_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="controls_forEach">
-      <field name="VAR" id="ZJNe-uX=j%+GV+N*817Y">j</field>
-    </block>
-    <block type="controls_flow_statements">
-      <field name="FLOW">BREAK</field>
-    </block>
-    <block type="sleep"></block>
-  </category>
+<category name="逻辑" colour="#4FC3F7">
+  <block type="controls_if"></block>
+  <block type="controls_if">
+    <mutation else="1"></mutation>
+  </block>
+  <block type="logic_compare">
+    <field name="OP">EQ</field>
+  </block>
+  <block type="logic_operation">
+    <field name="OP">AND</field>
+  </block>
+  <block type="logic_negate"></block>
+  <block type="logic_boolean">
+    <field name="BOOL">TRUE</field>
+  </block>
+  <block type="logic_null"></block>
+  <block type="logic_ternary"></block>
+  <block type="random_execute"></block>
+  <block type="try_catch"></block>
+  <block type="controls_repeat_ext">
+    <value name="TIMES">
+      <shadow type="math_number">
+        <field name="NUM">10</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="controls_whileUntil">
+    <field name="MODE">WHILE</field>
+  </block>
+  <block type="controls_for">
+    <field name="VAR" id="7V7Ri%H@,eTPMHbA%8R.">i</field>
+    <value name="FROM">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="TO">
+      <shadow type="math_number">
+        <field name="NUM">10</field>
+      </shadow>
+    </value>
+    <value name="BY">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="controls_forEach">
+    <field name="VAR" id="ZJNe-uX=j%+GV+N*817Y">j</field>
+  </block>
+  <block type="controls_flow_statements">
+    <field name="FLOW">BREAK</field>
+  </block>
+  <block type="sleep"></block>
+</category>
 <category name="运算" colour="#A073FF">
-    <block type="math_number">
-      <field name="NUM">0</field>
-    </block>
-    <block type="math_arithmetic">
-      <field name="OP">ADD</field>
-      <value name="A">
-        <shadow type="math_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
-      <value name="B">
-        <shadow type="math_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_single">
-      <field name="OP">ROOT</field>
-      <value name="NUM">
-        <shadow type="math_number">
-          <field name="NUM">9</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_trig">
-      <field name="OP">SIN</field>
-      <value name="NUM">
-        <shadow type="math_number">
-          <field name="NUM">45</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_constant">
-      <field name="CONSTANT">PI</field>
-    </block>
-    <block type="math_number_property">
-      <mutation divisor_input="false"></mutation>
-      <field name="PROPERTY">EVEN</field>
-      <value name="NUMBER_TO_CHECK">
-        <shadow type="math_number">
-          <field name="NUM">0</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_round">
-      <field name="OP">ROUND</field>
-      <value name="NUM">
-        <shadow type="math_number">
-          <field name="NUM">3.1</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_on_list">
-      <mutation op="SUM"></mutation>
-      <field name="OP">SUM</field>
-    </block>
-    <block type="math_modulo">
-      <value name="DIVIDEND">
-        <shadow type="math_number">
-          <field name="NUM">64</field>
-        </shadow>
-      </value>
-      <value name="DIVISOR">
-        <shadow type="math_number">
-          <field name="NUM">10</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_constrain">
-      <value name="VALUE">
-        <shadow type="math_number">
-          <field name="NUM">50</field>
-        </shadow>
-      </value>
-      <value name="LOW">
-        <shadow type="math_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
-      <value name="HIGH">
-        <shadow type="math_number">
-          <field name="NUM">100</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_random_int">
-      <value name="FROM">
-        <shadow type="math_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
-      <value name="TO">
-        <shadow type="math_number">
-          <field name="NUM">100</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_random_float"></block>
-  </category>
+  <block type="math_number">
+    <field name="NUM">0</field>
+  </block>
+  <block type="math_arithmetic">
+    <field name="OP">ADD</field>
+    <value name="A">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_single">
+    <field name="OP">ROOT</field>
+    <value name="NUM">
+      <shadow type="math_number">
+        <field name="NUM">9</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_trig">
+    <field name="OP">SIN</field>
+    <value name="NUM">
+      <shadow type="math_number">
+        <field name="NUM">45</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_constant">
+    <field name="CONSTANT">PI</field>
+  </block>
+  <block type="math_number_property">
+    <mutation divisor_input="false"></mutation>
+    <field name="PROPERTY">EVEN</field>
+    <value name="NUMBER_TO_CHECK">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_round">
+    <field name="OP">ROUND</field>
+    <value name="NUM">
+      <shadow type="math_number">
+        <field name="NUM">3.1</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_on_list">
+    <mutation op="SUM"></mutation>
+    <field name="OP">SUM</field>
+  </block>
+  <block type="math_modulo">
+    <value name="DIVIDEND">
+      <shadow type="math_number">
+        <field name="NUM">64</field>
+      </shadow>
+    </value>
+    <value name="DIVISOR">
+      <shadow type="math_number">
+        <field name="NUM">10</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_constrain">
+    <value name="VALUE">
+      <shadow type="math_number">
+        <field name="NUM">50</field>
+      </shadow>
+    </value>
+    <value name="LOW">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="HIGH">
+      <shadow type="math_number">
+        <field name="NUM">100</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_random_int">
+    <value name="FROM">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="TO">
+      <shadow type="math_number">
+        <field name="NUM">100</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_random_float"></block>
+</category>
 <category name="文本" colour="#F88767">
     <block type="text">
       <field name="TEXT"></field>
