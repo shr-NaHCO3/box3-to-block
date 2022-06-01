@@ -12,3 +12,9 @@ Blockly.JavaScript['sleep'] = function (block) {
   const value = block.getFieldValue("value");
   return `await sleep(${value});`;
 }
+
+Blockly.JavaScript['try_catch'] = function(block) {
+  const value1 = block.getFieldValue('try');
+  const value2 = block.getFieldValue('catch')
+  return `try{\n${value1}\n}catch(err){\n${value2}\n}`
+}

@@ -44,7 +44,7 @@
 
     <v-main :style="`opacity: ${!betaPasswordDialog?1:0}`">
       <BlocklyEditor ref="blocklyEditor" @change="editorChange"/>
-      <div ref="codeViewWarp" class="code-view" v-show="false"/>
+      <div ref="codeViewWarp" class="code-view" v-show="true"/>
     </v-main>
     <v-dialog v-model="functionNotCompleteDialog" width="300">
       <v-card color="error" dark>
@@ -66,8 +66,8 @@
       <v-card color="primary" dark>
         <v-card-title>Hey!</v-card-title>
         <v-card-text>
-          这是box3-visual-programing 的内测版本, 你需要输入口令才能体验.<br/>
-          另外, 在内测期间, 你可以通过<a target="_blank" style="color:#fff" href="https://jq.qq.com/?_wv=1027&k=S9PiNiXE">加入QQ群</a>来获得口令
+          这是box-to-block 的内测版本, 你需要输入口令才能体验.<br/>
+          另外, 在内测期间, 你可以通过<a target="_blank" style="color:#fff" href="https://jq.qq.com/?_wv=1027&k=k1CpCyXm">加入QQ群</a>来获得口令
           <v-text-field v-model="password" type="password" @keypress.enter="checkPassword"
                         placeholder="请在此处输入口令"></v-text-field>
           <v-btn text :disabled="!password" @click="checkPassword">
@@ -265,7 +265,7 @@ export default {
 /**
  * @type BVP图形化编辑器生成的代码
  * @desc 自动将代码在带有use_demo的标签的实体上运行
- */
+*/
  ;(()=>{${rawCode}})();\n`;
       this.$refs.dummyInput.select();
       document.execCommand("copy");

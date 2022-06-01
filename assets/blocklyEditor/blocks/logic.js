@@ -48,21 +48,27 @@ export default {
       define: {
         init: function () {
           this.appendDummyInput()
-            .appendField('尝试');
-          this.appendStatementInput('try')
+            .appendField("尝试执行");
+          this.appendStatementInput("content")
+            .setCheck(null)
+            .appendField('');
           this.appendDummyInput()
-            .appendField('抓取错误信息')
-  
-          this.appendStatementInput('catch')
-          this.setStyle("logic_blocks")
-          this.setTooltip("尝试与抓取")
-        },
-        code: function (block) {
-          const value1 = block.getFieldValue('try');
-          const value2 = block.getFieldValue('catch')
-          return `try{\n${value1}\n}catch(err){\n${value2}\n}`
+            .appendField("如果发生错误");
+          this.appendStatementInput("try")
+            .setCheck(null)
+            .appendField('');
+            
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setStyle("logic_blocks");
+          this.setTooltip("尝试执行代码，如果出错则执行指定代码。");
         }
-      }
+      },
+      code: function (block) {
+        const content = Blockly.JavaScript.statementToCode(block, 'content');
+        const content_try = Blockly.JavaScript.statementToCode(block, 'try');
+        return (`\ntry{\n    ${content}\n}catch(err){\n    ${content_try}\n}\n`);
+      },
     }
   }
 }

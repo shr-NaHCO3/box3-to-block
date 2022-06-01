@@ -39,4 +39,4 @@ Blockly.Blocks['try_catch'] = {
     this.setStyle("logic_blocks")
     this.setTooltip("尝试与抓取")
   }
-};
+}; 
