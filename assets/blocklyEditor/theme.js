@@ -5,7 +5,6 @@
 import * as Blockly from "blockly";
 
 try {
-  // noinspection JSUnusedLocalSymbols
   const theme = new Blockly.Theme(
     "box3",
     {
@@ -88,8 +87,8 @@ try {
         colourTertiary: "#4B967B"
       },
       attributes_blocks: {
-        colourPrimary: "#00a3bd",
-        colourTertiary: "#4B967B"
+        colourPrimary: "#4caf50",
+        colourTertiary: "#66a969"
       },
       web_blocks: {
         colourPrimary: "#CD59E1",
@@ -131,7 +130,7 @@ try {
         colour: "#2BC9A7"
       },
       attributes_category: {
-        colour: "#00a3bd"
+        colour: "#4caf50"
       },
       player_category: {
         colour: "#FF4081"
